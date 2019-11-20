@@ -1,0 +1,14 @@
+.site-footer {
+  a {
+    text-decoration: none;
+    color: $greenbrand;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+      list-style: none;
+    }
+  }
+}
