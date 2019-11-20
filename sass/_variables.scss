@@ -21,8 +21,21 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: "Exo";
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// MEDIA QUERIES
+
+$tablet-width: 620px;
+$desktop-width: 1080px;
+
+// STYLES
+
+$bgcolor: #222;
+$fontcolor: #fff;
+$fontsize: 1em;
+$lineheight: 1.5rem;
+$greenbrand: #00cc00;

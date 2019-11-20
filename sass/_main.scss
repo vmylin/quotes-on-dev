@@ -1,0 +1,10 @@
+body {
+  background-color: $bgcolor;
+  color: $fontcolor;
+  width: 1080px;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  a {
+    color: $greenbrand;
+  }
+}

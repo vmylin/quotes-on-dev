@@ -68,6 +68,11 @@ function qod_scripts()
 
 	// here is where you localized script code will go, reference this script qod-script
 	// look at the WP REST API slides or the wp-2017-rest theme in functions.php for more info
+	wp_localize_script('qod-script', 'qod_vars', array(
+		'rest_url' => esc_url_raw(rest_url()),
+		'wpapi_nonce' => wp_create_nonce('wp_rest'),
+		'post_id' => get_the_ID()
+	));
 }
 add_action('wp_enqueue_scripts', 'qod_scripts');
 

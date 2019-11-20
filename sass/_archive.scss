@@ -1,0 +1,21 @@
+.archives-wrapper {
+  width: 100vw;
+  margin: 0;
+  .browse-archives {
+    padding-left: 0.5rem;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        padding: 0 2rem 0.5rem 0;
+        list-style: none;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
