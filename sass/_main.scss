@@ -1,9 +1,17 @@
+html,
 body {
   background-color: $bgcolor;
   color: $fontcolor;
-  width: 1080px;
-  font-size: $fontsize;
+  font-weight: 100;
+  // font-size: $fontsize;
   line-height: $lineheight;
+  .site-content {
+    width: 95%;
+    margin: auto;
+    @include desktop {
+      width: 39%;
+    }
+  }
   a {
     color: $greenbrand;
   }

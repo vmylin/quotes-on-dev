@@ -29,13 +29,15 @@ $font__line-height-pre: 1.6;
 
 // MEDIA QUERIES
 
-$tablet-width: 620px;
-$desktop-width: 1080px;
+$tablet: 620px;
+$desktop: 1080px;
 
 // STYLES
 
 $bgcolor: #222;
 $fontcolor: #fff;
-$fontsize: 1em;
+$fontsize: 16px;
 $lineheight: 1.5rem;
-$greenbrand: #00cc00;
+$greenbrand: #0c0;
+$padding: 1rem;
+$margin: 1rem;

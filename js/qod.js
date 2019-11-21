@@ -11,11 +11,7 @@
             url: qod_vars.rest_url + 'wp/v2/posts/?filter[orderby]=rand&filter[posts_per_page]=1'
         })
             .done(function (data) {
-
-                console.log(data[0].content.rendered);
-                // console.log(data[0].content.rendered);
-
-                $('.entry-content').html("<h2>" + data[0].content.rendered + "</h2>");
+                $('.entry-content').html(data[0].content.rendered);
                 // data.title.rendere
                 $('.entry-title').html("<p> &mdash;" + data[0].title.rendered + "</p>");
             }).fail(function (error) {
