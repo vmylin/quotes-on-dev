@@ -5,14 +5,45 @@ body {
   font-weight: 100;
   // font-size: $fontsize;
   line-height: $lineheight;
-  .site-content {
-    width: 95%;
+  .page-wrapper {
+    width: 100%;
     margin: auto;
+    padding: 3%;
+    max-width: 1080px;
     @include desktop {
-      width: 39%;
+      .site-content {
+        position: relative;
+        margin: $padding * 3 $padding * 10 $padding * 3;
+        &::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f10d";
+          font-weight: 900;
+          margin-left: 5px;
+          position: absolute;
+          top: 30px;
+          left: -140px;
+          font-size: $fontsize * 7;
+          color: $greenbrand;
+        }
+        &::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f10e";
+          font-weight: 900;
+          margin-left: 5px;
+          position: absolute;
+          top: 30px;
+          right: -140px;
+          font-size: $fontsize * 7;
+          color: $greenbrand;
+        }
+      }
     }
   }
   a {
     color: $greenbrand;
+    text-decoration: none;
+    &:visited {
+      color: $visited;
+    }
   }
 }

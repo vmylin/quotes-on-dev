@@ -1,31 +1,27 @@
-.browse-archives {
-  font-size: 1.25rem;
-  ul {
+.archive-cat {
+  font-size: $fontsize * 1.25;
+  article {
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    li {
-      margin: 0 $margin * 0.8 $margin * 0.5 0;
-      list-style: none;
-      a {
-        text-decoration: none;
-        &:hover {
-          color: #090;
-        }
-        &:visited {
-          color: $greenbrand;
-        }
-      }
+    border-top: 1px dashed $fontcolor;
+    &:last-child {
+      border-bottom: 1px dashed $fontcolor;
+    }
+    .entry-meta p {
+      padding-bottom: $padding * 2;
     }
   }
 }
-
-.tag-archives ul {
-  li {
+.archive-pagination {
+  padding-top: $padding * 3;
+  .number-pagination {
     a {
-      font-size: 1.25rem;
+      text-decoration: none;
+      &:visited {
+        color: #090;
+      }
+    }
+    .page-numbers {
+      padding-right: $padding * 0.5;
     }
   }
 }

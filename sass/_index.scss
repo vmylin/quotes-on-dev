@@ -1,0 +1,17 @@
+.front-page {
+  .entry-content,
+  .entry-meta {
+    font-size: $fontsize * 1.25;
+  }
+}
+.quote-btn {
+  border: 2px solid $greenbrand;
+  box-shadow: none;
+  border-radius: none;
+  color: $greenbrand;
+  background-color: $bgcolor;
+  text-shadow: none;
+  font-size: $fontsize * 1;
+  padding: $padding * 0.7 $padding * 2.2;
+  margin-top: $margin * 2;
+}

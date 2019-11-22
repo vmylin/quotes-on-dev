@@ -606,7 +606,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-/* Submit a Quote Page */
 .browse-archives {
   font-size: 1.25rem; }
   .browse-archives ul {
@@ -630,26 +629,194 @@ object {
 .tag-archives ul li a {
   font-size: 1.25rem; }
 
+/* Submit a Quote Page */
+.logo {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto; }
+  @media (min-width: 620px) {
+    .logo {
+      width: 500px; } }
+  @media (min-width: 1080px) {
+    .logo {
+      margin: 0 auto;
+      width: 700px; } }
+
+.front-page .entry-content,
+.front-page .entry-meta {
+  font-size: 20px; }
+
+.quote-btn {
+  border: 2px solid #0c0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  color: #0c0;
+  background-color: #222;
+  text-shadow: none;
+  font-size: 16px;
+  padding: 0.7rem 2.2rem;
+  margin-top: 2rem; }
+
+.archive-cat {
+  font-size: 20px; }
+  .archive-cat article {
+    margin: 0;
+    border-top: 1px dashed #fff; }
+    .archive-cat article:last-child {
+      border-bottom: 1px dashed #fff; }
+    .archive-cat article .entry-meta p {
+      padding-bottom: 2rem; }
+
+.archive-pagination {
+  padding-top: 3rem; }
+  .archive-pagination .number-pagination a {
+    text-decoration: none; }
+    .archive-pagination .number-pagination a:visited {
+      color: #090; }
+  .archive-pagination .number-pagination .page-numbers {
+    padding-right: 0.5rem; }
+
 html,
 body {
   background-color: #222;
   color: #fff;
   font-weight: 100;
   line-height: 1.5rem; }
-  html .site-content,
-  body .site-content {
-    width: 95%;
-    margin: auto; }
+  html .page-wrapper,
+  body .page-wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 3%;
+    max-width: 1080px; }
     @media (min-width: 1080px) {
-      html .site-content,
-      body .site-content {
-        width: 39%; } }
+      html .page-wrapper .site-content,
+      body .page-wrapper .site-content {
+        position: relative;
+        margin: 3rem 10rem 3rem; }
+        html .page-wrapper .site-content::before,
+        body .page-wrapper .site-content::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f10d";
+          font-weight: 900;
+          margin-left: 5px;
+          position: absolute;
+          top: 30px;
+          left: -140px;
+          font-size: 112px;
+          color: #0c0; }
+        html .page-wrapper .site-content::after,
+        body .page-wrapper .site-content::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f10e";
+          font-weight: 900;
+          margin-left: 5px;
+          position: absolute;
+          top: 30px;
+          right: -140px;
+          font-size: 112px;
+          color: #0c0; } }
   html a,
   body a {
-    color: #0c0; }
+    color: #0c0;
+    text-decoration: none; }
+    html a:visited,
+    body a:visited {
+      color: #090; }
 
-.about-wrapper {
-  width: 100vw; }
+input.search-field {
+  width: 250px;
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #0c0; }
+  input.search-field:focus {
+    border-color: #fcfcd2;
+    color: #fff; }
+
+.search-submit {
+  background: none;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  text-shadow: none;
+  color: #0c0;
+  padding: 0.5rem; }
+
+.search-wrapper .page-title {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px dashed #fff; }
+
+.search-wrapper .entry-header {
+  margin: 2.2rem 0; }
+  .search-wrapper .entry-header a {
+    text-decoration: none; }
+    .search-wrapper .entry-header a:visited {
+      color: #0c0; }
+
+.search-wrapper .number-pagination {
+  margin-top: 3rem; }
+  .search-wrapper .number-pagination .page-numbers {
+    padding: 0 0.2rem;
+    text-decoration: none; }
+
+.quote-submission {
+  margin-top: 3rem; }
+
+.quote-submission-wrapper label {
+  display: inline-block;
+  margin: 0.3rem 0; }
+
+.quote-submission-wrapper input {
+  width: 50%; }
+  .quote-submission-wrapper input[type="submit"] {
+    width: initial;
+    color: #0c0;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 16px;
+    padding: 0.7rem 2.2rem; }
+
+.quote-submission-wrapper input,
+.quote-submission-wrapper textarea {
+  margin: 0.5rem 0;
+  background-color: #222;
+  border: 2px solid #0c0; }
+
+.quote-submission-wrapper .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+@media (min-width: 620px) {
+  .quote-submission-wrapper .source {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .quote-submission-wrapper .url {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.quote-submission-wrapper .login {
+  margin: 5rem; }
 
 .site-footer {
   padding: 6rem 0 6rem 0; }
@@ -689,4 +856,4 @@ body {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      padding: 0 3rem 0 0; } }
+      padding: 0 1.2rem 0 0; } }

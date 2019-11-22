@@ -10,7 +10,6 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
 		<?php if (have_posts()) : ?>
 
 			<header class="page-header">
@@ -19,23 +18,25 @@ get_header(); ?>
 					?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while (have_posts()) : the_post(); ?>
+			<div class="archive-cat">
+				<?php /* Start the Loop */ ?>
+				<?php while (have_posts()) : the_post(); ?>
 
-				<?php
-						get_template_part('template-parts/content');
-						?>
+					<?php
+							get_template_part('template-parts/content');
+							?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
+			</div>
+			<div class="archive-pagination">
+				<?php qod_numbered_pagination(); ?>
+			</div>
 		<?php else : ?>
 
 			<?php get_template_part('template-parts/content', 'none'); ?>
 
 		<?php endif; ?>
-
 	</main><!-- #main -->
 </div><!-- #primary -->
 

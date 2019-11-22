@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  width: $mobilelogo;
+  max-width: 100%;
+  height: auto;
+  @include tablet {
+    width: $tabletlogo;
+  }
+  @include desktop {
+    margin: 0 auto;
+    width: $desktoplogo;
+  }
+}

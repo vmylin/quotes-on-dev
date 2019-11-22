@@ -1,0 +1,19 @@
+input.search-field {
+  width: 250px;
+  color: #fff;
+  background-color: $bgcolor;
+  border: 2px solid $greenbrand;
+  &:focus {
+    border-color: #fcfcd2;
+    color: #fff;
+  }
+}
+.search-submit {
+  background: none;
+  font-size: $fontsize;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  color: $greenbrand;
+  padding: $padding * 0.5;
+}

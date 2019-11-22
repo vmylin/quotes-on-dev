@@ -1,0 +1,23 @@
+.search-wrapper {
+  .page-title {
+    margin-top: $margin * 3;
+    padding-bottom: $padding * 3;
+    border-bottom: 1px dashed #fff;
+  }
+  .entry-header {
+    margin: $margin * 2.2 0;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: $greenbrand;
+      }
+    }
+  }
+  .number-pagination {
+    margin-top: $margin * 3;
+    .page-numbers {
+      padding: 0 $padding * 0.2;
+      text-decoration: none;
+    }
+  }
+}
