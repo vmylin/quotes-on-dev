@@ -643,11 +643,15 @@ object {
       margin: 0 auto;
       width: 700px; } }
 
-.front-page .entry-content,
-.front-page .entry-meta {
+.front-page h2 {
+  font-weight: 100;
   font-size: 20px; }
 
-.quote-btn {
+.front-page p {
+  font-size: 40px; }
+
+.front-page .quote-btn {
+  display: block;
   border: 2px solid #0c0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -656,8 +660,18 @@ object {
   background-color: #222;
   text-shadow: none;
   font-size: 16px;
-  padding: 0.7rem 2.2rem;
-  margin-top: 2rem; }
+  padding: 0.7rem 2.2rem; }
+  @media (min-width: 1080px) {
+    .front-page .quote-btn {
+      margin: 0 auto; } }
+
+.browse-archives .entry-title {
+  font-size: 32px; }
+
+.post-archives h2,
+.category-archives h2,
+.tag-archives h2 {
+  font-size: 24px; }
 
 .archive-cat {
   font-size: 20px; }
@@ -683,7 +697,7 @@ body {
   background-color: #222;
   color: #fff;
   font-weight: 100;
-  line-height: 1.5rem; }
+  line-height: 1.5; }
   html .page-wrapper,
   body .page-wrapper {
     width: 100%;
@@ -702,7 +716,7 @@ body {
           font-weight: 900;
           margin-left: 5px;
           position: absolute;
-          top: 30px;
+          top: -20px;
           left: -140px;
           font-size: 112px;
           color: #0c0; }
@@ -713,7 +727,7 @@ body {
           font-weight: 900;
           margin-left: 5px;
           position: absolute;
-          top: 30px;
+          top: -20px;
           right: -140px;
           font-size: 112px;
           color: #0c0; } }

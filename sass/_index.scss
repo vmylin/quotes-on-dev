@@ -1,17 +1,23 @@
 .front-page {
-  .entry-content,
-  .entry-meta {
+  h2 {
+    font-weight: 100;
     font-size: $fontsize * 1.25;
   }
-}
-.quote-btn {
-  border: 2px solid $greenbrand;
-  box-shadow: none;
-  border-radius: none;
-  color: $greenbrand;
-  background-color: $bgcolor;
-  text-shadow: none;
-  font-size: $fontsize * 1;
-  padding: $padding * 0.7 $padding * 2.2;
-  margin-top: $margin * 2;
+  p {
+    font-size: $fontsize * 2.5;
+  }
+  .quote-btn {
+    display: block;
+    border: 2px solid $greenbrand;
+    box-shadow: none;
+    border-radius: none;
+    color: $greenbrand;
+    background-color: $bgcolor;
+    text-shadow: none;
+    font-size: $fontsize * 1;
+    padding: $padding * 0.7 $padding * 2.2;
+    @include desktop {
+      margin: 0 auto;
+    }
+  }
 }

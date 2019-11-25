@@ -3,7 +3,6 @@ body {
   background-color: $bgcolor;
   color: $fontcolor;
   font-weight: 100;
-  // font-size: $fontsize;
   line-height: $lineheight;
   .page-wrapper {
     width: 100%;
@@ -20,7 +19,7 @@ body {
           font-weight: 900;
           margin-left: 5px;
           position: absolute;
-          top: 30px;
+          top: -20px;
           left: -140px;
           font-size: $fontsize * 7;
           color: $greenbrand;
@@ -31,7 +30,7 @@ body {
           font-weight: 900;
           margin-left: 5px;
           position: absolute;
-          top: 30px;
+          top: -20px;
           right: -140px;
           font-size: $fontsize * 7;
           color: $greenbrand;

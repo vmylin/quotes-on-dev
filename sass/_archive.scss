@@ -1,3 +1,15 @@
+.browse-archives {
+  .entry-title {
+    font-size: $fontsize * 2;
+  }
+}
+.post-archives,
+.category-archives,
+.tag-archives {
+  h2 {
+    font-size: $fontsize * 1.5;
+  }
+}
 .archive-cat {
   font-size: $fontsize * 1.25;
   article {
