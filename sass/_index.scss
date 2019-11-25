@@ -17,7 +17,7 @@
     font-size: $fontsize * 1;
     padding: $padding * 0.7 $padding * 2.2;
     @include desktop {
-      margin: 0 auto;
+      margin: 0 auto; 
     }
   }
 }
